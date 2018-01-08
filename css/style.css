@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Englebert|Raleway:300|Roboto+Slab:700');
+
+body {
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	font-size: 1.2em;
+	margin: 0;
+	line-height: 1.4;
+	text-align: center;
+}
+
+a {text-decoration: none;}
+
+h1, h2 {
+	font-family: 'Roboto Slab', serif;
+	font-weight: 700;
+}
+
+h1 {font-size: 2em;	}
+
+h2 {
+	font-size: 1.5em;
+	margin-bottom: 0;
+}
+
+header {
+	height:4.75em;
+	padding: .25em;
+	text-align: center;
+}
+
+nav{
+	float: right;
+	padding:.5em;
+}
+
+nav li{padding:0.625em 0;}
+
+nav ul{
+	background:#fff;
+	position:absolute;
+	display:none;
+	right:0;
+	top:0;
+	width:100%;
+	margin:0;
+	list-style-type: none;
+}
+
+nav:hover ul{display:block;}
+
+section {padding: 5em 2em;}
+
+footer {
+	background-color: #fff;
+	color:#000;
+	min-height: 2em;
+	padding: 1em;
+	text-align: center;
+}
+
+/* Ids */
+
+#menu-icon{
+	background:#fff url('../images/menu-icon.png')center;
+	display:inline-block;
+	background-size: cover;
+	width:3.5em;
+	height:3.5em;
+}
+#logo{
+	background:url('../images/ADA-logo.png')no-repeat center;
+	display: inline-block;
+	background-size: cover;
+	float:left;
+	width:9.5em;
+	height: 4.5em;
+	margin:.25em;
+}
+
+
+/* Classes */
+
+.content {
+	background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('../images/wood-background.jpg') no-repeat center right;
+	background-size: cover;
+	background-color: #F3F3F3;
+	color: #fff;
+}
+
+.columns {
+	display: grid;
+	margin: 0 auto;
+	max-width: 1440px;
+	width: 100%;
+	grid-template-columns: 1fr;
+	grid-gap: 5em;
+}
+
+.hero{
+	padding:25%;
+	margin:auto;
+	text-align: center;
+	background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('../images/hero.jpg') no-repeat center;
+	background-size: cover;
+}
+
+.logotext {
+	font-size: 2.5em;
+	display: inline-block;
+	font-family: 'Englebert', sans-serif;
+	margin:10% 0;
+	border-top: 3px solid black;
+	border-bottom: 3px solid black;
+	padding: 0 1em;
+}
+
+/* Phablet */
+
+@media only screen and (min-width:425px) {
+
+html {font-size:18px;}
+
+}
+
+/* Tablet */
+
+@media only screen and (min-width:768px) {
+
+html {font-size:22px;}
+
+.columns{grid-template-columns:1fr 1fr;}
+
+}
+
+/* Laptop */
+
+@media only screen and (min-width:1024px) {
+
+nav ul{
+	display:inline;
+	width: auto;
+	padding:1.9em;
+}
+
+nav li{
+	margin: 0;
+	display:inline;
+	width: auto;
+	padding:0 1em;
+}
+
+html {font-size:24px;}
+
+.logotext {font-size: 3em;}
+
+.columns{grid-template-columns:repeat(3,1fr);}
+
+}
+
+/* Desktop */
+
+@media only screen and (min-width:1440px) {
+
+html {font-size:32px;}
+
+.logotext {font-size: 4em;}
+
+.columns{grid-template-columns:repeat(3,1fr);}
+
+}
