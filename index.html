@@ -1,52 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>Responsive Navigation with Hamburger Menu</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/style.css">
-</head>
-	<body>
-		<!-- add header -->
-		<header>
-		<!-- add anchor and  logo id -->
-			<a href="index.html" id=logo></a>
-			<!-- add nav-->
-			<nav>
-			<!-- add anchor and id for menu icon -->
-				<a href="#" id="menu-icon"></a>
-				<!-- add Ul and LI -->
-				<ul>
-					
-				
-				<!-- add current page class to LI -->
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="video.html">Video</a></li>
-				<li><a href="blog.html">Blog</a></li>
-				</ul>
-			</nav>
-		</header>	
-		
-		<!-- add img and hero id-->
-		<img src="img/hero.jpg" alt="react" id="hero">
+    <head>
+        <meta charset="utf-8">
+        <title>All Day Ales</title>
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body> 
 
-		<!-- add section -->
-		<section>
+        <header>
+                <a href="index.html" id="logo"></a>            
+                <nav>           
+                    <a href="#" id="menu-icon"></a>               
+                    <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>                
+                    <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>    
+        </header>
 
-			<!-- add H1 -->
-			<h1>Get A Reaction</h1>
+        <section class="hero">
+            <h1 class="logotext">All Day Ales</h1>
+            <h2>Everyday Beer For Everyday People</h2>
+        </section>           
 
-		    <!-- add paragraph 1 --> 
-			<p>Spicy jalapeno bacon ipsum dolor amet salami biltong pancetta ribeye, swine strip steak prosciutto capicola venison jerky burgdoggen flank porchetta corned beef pig. Short ribs kielbasa cupim beef ribs, tri-tip tenderloin landjaeger pig strip steak filet mignon short loin pastrami pork chop. Shankle alcatra shank meatloaf sirloin bresaola hamburger, salami bacon burgdoggen ribeye drumstick. Fatback biltong venison turkey shankle. Kielbasa bacon swine venison. Jowl chicken bacon pork loin cupim sausage ribeye beef ribs shankle drumstick porchetta spare ribs. Turducken jerky t-bone filet mignon ground round bresaola.</p>
+        <section class="content">  
 
-			<p>Tongue tail bresaola pig pork loin pork chop boudin frankfurter. Andouille ground round kevin biltong, doner bacon meatloaf jerky boudin spare ribs pork loin. Corned beef pig pastrami tongue. Bacon ground round capicola salami sirloin shank fatback venison kielbasa ham. Bresaola porchetta pork chop tenderloin.</p>
+            <h1>Our Beers</h1>
 
-			<p>Tenderloin shoulder pork filet mignon, t-bone corned beef andouille doner drumstick flank biltong. Porchetta capicola t-bone beef ribs meatball tail frankfurter venison ball tip shoulder pork loin landjaeger. Turkey chicken venison, t-bone tongue ground round corned beef burgdoggen bresaola alcatra prosciutto tri-tip. Rump filet mignon leberkas shankle sausage spare ribs picanha pig prosciutto andouille pork chop tail. Strip steak beef pork loin filet mignon burgdoggen, t-bone shank jerky. Alcatra corned beef swine pork chop tail kielbasa jerky beef ribs. Salami burgdoggen sirloin boudin drumstick chuck.</p>
+            <div class="columns">
 
-			<p>Does your lorem ipsum text long for something a little meatier? Give our generator a try… it’s tasty!</p>
+                <div>
+                    <img src="images/beer-amber.png" alt="Amber Beer">
+                    <h2>All Day Amber</h2>
+                    <p>A low ABV amber to keep you sipping all day long</p>
+                </div>
+                <div>
+                    <img src="images/beer-blonde.png" alt="Boujee Beer">
+                    <h2>Bad And Boujee Blonde</h2>
+                    <p>A crisp blonde with lots of class</p>
+                </div>
+                <div>
+                    <img src="images/beer-brown.png" alt="Breakfast Beer">
+                    <h2>Breakfast Brown</h2>
+                    <p>A non-alcoholic brown ale to help get you out of bed in the morning</p>
+                </div>
+                <div>
+                    <img src="images/beer-trump.png" alt="Trump Beer">
+                    <h2>Donald Trump Double IPA</h2>
+                    <p>An awful beer, don't drink it. Seriously. Like really, it's awful.</p>
+                </div>
+                <div>
+                    <img src="images/beer-green.png" alt="Trudeau Beer">
+                    <h2>Trudeau Triple IPA</h2>
+                    <p>A tasty triple IPA brewed with a special ingredient, available "on or before july 1st 2018"</p>
+                </div>
+                <div>
+                    <img src="images/beer-lager.png" alt="Lazy Day Beer">
+                    <h2>Lazy Day Lager</h2>
+                    <p>A crisp refreshing lager that is perfect for your day off</p>
+                </div>
+            
+            </div>
+        </section>        
+        
+        <footer>
+            <small>WEBD1102 - Dalton Pearson 2018</small>
+        </footer>
 
-		</section>
-		
-	</body>
+    </body>
 </html>
